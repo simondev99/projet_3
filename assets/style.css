@@ -2,9 +2,41 @@
   font-family: "Roboto", serif;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
-  
+header {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+img {
+  max-width: 197px;
+  object-fit: contain;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.test {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media only screen and (max-width: 767.98px) {
+  /* ... */ 
+  header {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
 }
