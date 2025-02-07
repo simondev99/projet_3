@@ -10,6 +10,12 @@ header {
   align-items: center;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+
 .reservation {
 display: flex;
 align-items: center;
@@ -43,16 +49,23 @@ flex-direction: column;
   }
 
   .logo {
-    width: 100%;
+    display: contents;
+  }
+
+  .logo img {
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 20px;
   }
 
-  img {
-    max-width: 197px;
+  .restaurants img {
+    max-width: 100%;
     object-fit: contain;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
 
   .reservation {
@@ -93,7 +106,7 @@ flex-direction: column;
   }
 
   .restaurants {
-    margin: 20px;
+    background-color: #f6f6f6;
   }
 
   .wrapper {
@@ -122,17 +135,23 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    gap: 20px;
   }
 
   .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    /* padding: 5px; */
     /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
   }
 
-  .card img {
+  /* .card img {
     object-fit: cover;
+  } */
+
+  .card-txt {
+    display: flex;
+    flex-direction: column;
   }
 
   .card-title {
@@ -144,5 +163,33 @@ flex-direction: column;
 
   .card-subtitle {
     font-size: 17px;
+  }
+
+  .fa-heart {
+    /* background: linear-gradient(0deg, #9356DC, #FF79DA); */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo-end img {
+    color: white;
+    max-width: 30%;
+  }
+
+  .end {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .couverts {
+    display: flex;
+    align-items: center;
+  }
+
+  .partner {
+    display: flex;
+    align-items: center;
   }
 }
