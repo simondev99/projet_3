@@ -174,7 +174,7 @@ flex-direction: column;
   }
 
   .logo-end img {
-    color: white;
+    opacity: 100%;
     max-width: 30%;
   }
 
@@ -191,5 +191,13 @@ flex-direction: column;
   .partner {
     display: flex;
     align-items: center;
+  }
+
+  .fa-handshake-angle {
+    margin-right: 10px;
+  }
+
+  .fa-utensils {
+    margin-right: 10px;
   }
 }
