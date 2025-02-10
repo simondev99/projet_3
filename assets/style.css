@@ -27,6 +27,10 @@ align-items: center;
 flex-direction: column;
 }
 
+p {
+  margin: 0;
+}
+
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
@@ -259,8 +263,17 @@ flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+  }
+
+  .choice3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .choice4 {
+    padding: 5px 15px 0 15px;
   }
 
   .card-resto img {
@@ -282,5 +295,6 @@ flex-direction: column;
     background: linear-gradient(0deg, #9356DC, #FF79DA);
     color: white;
     margin-bottom: 50px;
+    margin-top: 30px;
   }
 }
