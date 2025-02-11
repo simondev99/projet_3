@@ -266,6 +266,7 @@ p {
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
+    gap: 5px;
   }
 
   .choice3 {
@@ -298,5 +299,22 @@ p {
     color: white;
     margin-bottom: 50px;
     margin-top: 30px;
+  }
+
+  .trait {
+    background-color: #99e2d0;
+    height: 3px;
+    width: 40px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .title-heart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
