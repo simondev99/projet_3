@@ -1,0 +1,21 @@
+* {
+  font-family: "Roboto", serif;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+
+/****** Media queries ***********/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  /* ... */ 
+
+  .contact {
+    color: inherit;
+    text-decoration: none;
+  }
+
+}

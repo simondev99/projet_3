@@ -2,34 +2,10 @@
   font-family: "Roboto", serif;
 }
 
-header {
-  /* background-color: aquamarine; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  margin-top: -50px;
-}
-
 footer {
   background-color: #353535;
   color: white;
   padding: 20px;
-}
-
-.reservation {
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-
-p {
-  margin: 0;
 }
 
 /****** Media queries ***********/
@@ -41,22 +17,12 @@ p {
     margin: 0;
   }
 
-  /* .big {
-    position: relative;
-  } */
-
-  header {
-    /* background-color: red; */
+  .logo {
     display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
+    align-items: center;
   }
 
-  /* main {
-    position: absolute;;
-  } */
-
-  .test {
+  .localisation {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -64,36 +30,6 @@ p {
     background-color: #eaeaea;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     gap: 10px;
-  }
-
-  .logo {
-    /* display: contents; */
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    align-items: center;
-    gap: 10%;
-  }
-
-  .logo img {
-    width: 50%;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    margin: 20px;
-  }
-
-  .restaurants img {
-    max-width: 100%;
-    object-fit: contain;
-    object-fit: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-
-  .restaurants h2 {
-    padding-left: 20px;
-    padding-top: 50px;
   }
 
   .reservation {
@@ -116,6 +52,13 @@ p {
     margin: 20px;
   }
 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
   .choice {
     background-color: #f6f6f6;
     border: transparent;
@@ -124,30 +67,6 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
-  }
-
-  .fa-solid {
-    color: #7e7e7e;
-  }
-
-  .fa-store {
-    color: #9356DC;
-  }
-
-  .fa-arrow-left {
-    color: black;
-    padding-left: 5%;
-  }
-
-  .restaurants {
-    background-color: #f6f6f6;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 20px;
   }
 
   .number {
@@ -165,6 +84,23 @@ p {
     font-size: 14px;
   }
 
+  .restaurants {
+    background-color: #f6f6f6;
+  }
+
+  .restaurants h2 {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  .restaurants img {
+    max-width: 100%;
+    object-fit: contain;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
   .restaurants-cards {
     display: flex;
     flex-direction: column;
@@ -175,13 +111,7 @@ p {
   .card {
     background-color: white;
     border-radius: 20px;
-    /* padding: 5px; */
-    /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
   }
-
-  /* .card img {
-    object-fit: cover;
-  } */
 
   .card-txt {
     display: flex;
@@ -200,11 +130,15 @@ p {
   }
 
   .fa-heart {
-    /* background: linear-gradient(0deg, #9356DC, #FF79DA); */
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
+  }
+
+  .nolink {
+    color: inherit;
+    text-decoration: none;
   }
 
   .logo-end img {
@@ -227,113 +161,9 @@ p {
     align-items: center;
   }
 
-  .fa-handshake-angle {
-    margin-right: 10px;
-    color: white;
-  }
-
-  .fa-utensils {
-    margin-right: 10px;
-    color: white;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-  }
-
-  .menu h1 {
-    font-family: "shrikhand", serif;
-  }
-
-  .entrees {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .plats {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .desserts {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .choice2 {
-    background-color: white;
-    border: transparent;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .choice3 {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px 15px;
-  }
-
-  .choice4 {
-    padding: 10px 15px 0 15px;
-  }
-
-  .card-resto img {
-    object-fit: cover;
-    width: 100%;
-    height: 275px;
-  }
-
-  .bouton {
-    display: flex;
-    justify-content: center;
-  }
-
-  .button1 {
-    width: 218px;
-    height: 50px;
-    border: transparent;
-    border-radius: 30px;
-    background: linear-gradient(0deg, #9356DC, #FF79DA);
-    color: white;
-    margin-bottom: 50px;
-    margin-top: 30px;
-  }
-
-  .trait {
-    background-color: #99e2d0;
-    height: 3px;
-    width: 40px;
-  }
-
-  .title {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 10px;
-  }
-  .title-heart {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   .contact {
     color: inherit;
     text-decoration: none;
   }
+
 }
