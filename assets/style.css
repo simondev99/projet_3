@@ -19,6 +19,7 @@ footer {
 
   .logo {
     display: flex;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -46,6 +47,14 @@ footer {
     background: linear-gradient(0deg, #9356DC, #FF79DA);
     color: white;
     margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: brightness(1.1);
+    /* Augmente l'ombre portée au survol */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .fonctionnement h2 {

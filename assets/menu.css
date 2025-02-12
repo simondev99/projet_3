@@ -13,6 +13,38 @@ footer {
 @media (max-width: 767px) {
   /* ... */ 
 
+  .card-restaurant img {
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+  }
+
+
+  .nolink {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .logo-end img {
+    filter: invert();
+    max-width: 30%;
+  }
+
+  .end {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .couverts {
+    display: flex;
+    align-items: center;
+  }
+
+  .partner {
+    display: flex;
+    align-items: center;
+  }
+
   .contact {
     color: inherit;
     text-decoration: none;
