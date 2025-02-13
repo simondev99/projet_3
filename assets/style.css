@@ -1,11 +1,58 @@
 * {
   font-family: "Roboto", serif;
+  box-sizing: border-box;
 }
 
 footer {
   background-color: #353535;
   color: white;
   padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #f5f5f5; */
+  backdrop-filter: blur(0.16rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s ease-in forwards;
+  animation-delay: 2s;
+  z-index: 100;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  animation-iteration-count: 3;
+}
+
+.hide-loader {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /****** Media queries ***********/
@@ -23,30 +70,39 @@ footer {
     align-items: center;
   }
 
+  .logo img {
+    width: 50%;
+    padding: 15px 0;
+  }
+
   .localisation {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.25) inset;
     gap: 10px;
   }
 
   .reservation {
     text-align: center;
     background-color: #f6f6f6;
-    padding: 0 30px;
+    padding: 30px;
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.25) inset;
+  }
+
+  .reservation h2 {
+    margin: 0;
   }
 
   .button {
-    width: 218px;
+    width: 50%;
     height: 50px;
     border: transparent;
     border-radius: 30px;
     background: linear-gradient(0deg, #9356DC, #FF79DA);
     color: white;
-    margin-bottom: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 
@@ -76,6 +132,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    &:hover {
+      border: 1px solid black;
+    }
   }
 
   .number {
@@ -83,7 +143,7 @@ footer {
     border: transparent;
     border-radius: 200px;
     background-color: #9356DC;
-    padding: 5px;
+    padding: 10px;
     width: 14px;
     height: 14px;
     display: flex;
@@ -104,7 +164,7 @@ footer {
 
   .restaurants img {
     max-width: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
