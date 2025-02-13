@@ -1,6 +1,7 @@
 * {
   font-family: "Roboto", serif;
-  box-sizing: border-box;
+  margin: 0;
+  /* box-sizing: border-box; */
 }
 
 footer {
@@ -9,13 +10,12 @@ footer {
   padding: 20px;
 }
 
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #f5f5f5; */
   backdrop-filter: blur(0.16rem);
   display: flex;
   justify-content: center;
@@ -23,9 +23,9 @@ footer {
   animation: fadeOut 1s ease-in forwards;
   animation-delay: 2s;
   z-index: 100;
-}
+} */
 
-.loader {
+/* .loader {
   width: 50px;
   height: 50px;
   border: 5px solid #f3f3f3;
@@ -33,18 +33,18 @@ footer {
   border-radius: 50%;
   animation: spin 1s linear infinite;
   animation-iteration-count: 3;
-}
+} */
 
-.hide-loader {
+/* .hide-loader {
   display: none;
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+} */
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
   0% {
     opacity: 1;
     visibility: visible;
@@ -53,7 +53,7 @@ footer {
     opacity: 0;
     visibility: hidden;
   }
-}
+} */
 
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
@@ -83,6 +83,7 @@ footer {
     background-color: #eaeaea;
     box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.25) inset;
     gap: 10px;
+    padding: 15px 0;
   }
 
   .reservation {
@@ -93,7 +94,11 @@ footer {
   }
 
   .reservation h2 {
-    margin: 0;
+    padding: 10px;
+  }
+
+  .reservation p {
+    padding: 15px;
   }
 
   .button {
@@ -106,11 +111,10 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 
-    &:hover {
+    /* &:hover {
       filter: brightness(1.1);
-    /* Augmente l'ombre portée au survol */
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
+    } */
   }
 
   .fonctionnement h2 {
@@ -121,7 +125,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0 20px;
+    padding: 15px 20px;
   }
 
   .choice {
@@ -133,9 +137,13 @@ footer {
     align-items: center;
     gap: 20px;
 
-    &:hover {
+    /* &:hover {
       border: 1px solid black;
-    }
+    } */
+  }
+
+  .choice p {
+    padding: 20px 0;
   }
 
   .number {
@@ -143,7 +151,7 @@ footer {
     border: transparent;
     border-radius: 200px;
     background-color: #9356DC;
-    padding: 10px;
+    padding: 5px;
     width: 14px;
     height: 14px;
     display: flex;
@@ -158,14 +166,13 @@ footer {
   }
 
   .restaurants h2 {
-    padding-left: 20px;
-    padding-top: 50px;
+    padding: 50px 0 20px 20px;
   }
 
   .restaurants img {
-    max-width: 100%;
-    /* object-fit: contain; */
     object-fit: cover;
+    max-height: 200px;
+    width: -webkit-fill-available;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
@@ -184,10 +191,14 @@ footer {
 
   .card-txt {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    /* flex-direction: column; */
   }
 
   .card-title {
+    /* max-width: 50%; */
     font-size: 18px;
     font-style: bold;
     display: flex;
@@ -195,6 +206,7 @@ footer {
   }
 
   .card-subtitle {
+    max-width: 50%;
     font-size: 17px;
   }
 
@@ -220,6 +232,10 @@ footer {
     flex-direction: column;
   }
 
+  .end p {
+    padding: 5px;
+  }
+
   .couverts {
     display: flex;
     align-items: center;
@@ -233,6 +249,13 @@ footer {
   .contact {
     color: inherit;
     text-decoration: none;
+    padding: 5px;
+  }
+
+  .titre-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
 }
