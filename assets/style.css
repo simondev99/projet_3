@@ -172,7 +172,7 @@ footer {
   .restaurants img {
     object-fit: cover;
     max-height: 200px;
-    width: -webkit-fill-available;
+    width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
@@ -194,28 +194,51 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px 15px;
-    /* flex-direction: column; */
+  }
+
+  .titre-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   .card-title {
-    /* max-width: 50%; */
     font-size: 18px;
     font-style: bold;
     display: flex;
     align-items: center;
   }
 
+  /* .fa-heart {
+    background-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /* -webkit-transition: 0.5s; */
+
+    /* &:active {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+      background-image: linear-gradient(#FF79DA, #9356DC);
+      -webkit-text-stroke-color: transparent;
+      -webkit-text-stroke-width: 0px;
+    }
+  } */
+
   .card-subtitle {
     max-width: 50%;
     font-size: 17px;
   }
 
-  .fa-heart {
+  /* .fa-heart {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-  }
+  } */
 
   .nolink {
     color: inherit;
@@ -252,10 +275,18 @@ footer {
     padding: 5px;
   }
 
-  .titre-carte {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  .heart {
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .heart:active {
+    -webkit-text-fill-color: red;
+    -moz-text-fill-color: transparent;
   }
 
 }
