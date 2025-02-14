@@ -57,7 +57,7 @@ footer {
 
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
   /* ... */ 
 
   body {
@@ -214,20 +214,25 @@ footer {
     align-items: center;
   }
 
-  .heart {
+  .fa-heart {
+    font-weight: 400;
     font-size: 30px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   
-  .heart:active {
-    -webkit-text-fill-color: -webkit-gradient (0deg, #9356DC, #FF79DA);
-    -moz-text-fill-color: transparent;
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-image: linear-gradient(#FF79DA, #9356DC); */
+  .fa-heart:hover {
+    font-weight: 600;
+    color: transparent;
+    /* -webkit-text-fill-color: -webkit-gradient (0deg, #9356DC, #FF79DA); */
+    /* -moz-text-fill-color: transparent; */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
   .nolink {
@@ -265,4 +270,3 @@ footer {
     padding: 5px;
   }
 
-}

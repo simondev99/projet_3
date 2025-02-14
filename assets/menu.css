@@ -15,8 +15,8 @@ header {
   margin-top: -40px;
   padding-top: 20px;
   background-color: #f6f6f6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   z-index: 10;
 }
 
@@ -74,7 +74,7 @@ overlay {
 
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
   /* ... */ 
 
   .logo {
@@ -368,4 +368,3 @@ overlay {
   text-overflow: ellipsis;
 }
 
-}
