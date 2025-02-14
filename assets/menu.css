@@ -4,12 +4,20 @@
   /* box-sizing: border-box; */
 }
 
+header {
+  position: relative;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-top: -40px;
+  padding-top: 20px;
   background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  z-index: 10;
 }
 
 footer {
@@ -88,10 +96,16 @@ overlay {
     left: 10%;
   }
 
+  .card-restaurant {
+    width: 100%;
+    height: 275px;
+    position: relative;
+  }
+
   .card-restaurant img {
     object-fit: cover;
     width: 100%;
-    height: 275px;
+    height: 100%;
   }
 
   .title {
@@ -105,6 +119,14 @@ overlay {
     flex-direction: row;
     justify-content: space-around;
     padding: 20px 0;
+  }
+
+  .title-heart h1 {
+    font-family: 'shrikland';
+  }
+
+  .title-heart i {
+    align-self: center;
   }
 
   .starter {
