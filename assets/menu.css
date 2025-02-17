@@ -83,10 +83,10 @@ overlay {
     align-items: center;
     position: relative;
     padding: 20px 0;
-  }
 
-  .logo img {
-    max-width: 40%;
+    img {
+      max-width: 40%;
+    }
   }
 
   .nolink {
@@ -100,12 +100,12 @@ overlay {
     width: 100%;
     height: 275px;
     position: relative;
-  }
 
-  .card-restaurant img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .title {
@@ -119,14 +119,14 @@ overlay {
     flex-direction: row;
     justify-content: space-around;
     padding: 20px 0;
-  }
 
-  .title-heart h1 {
-    font-family: 'shrikland';
-  }
+    h1 {
+      font-family: 'shrikland';
+    }
 
-  .title-heart i {
-    align-self: center;
+    i {
+      align-self: center;
+    }
   }
 
   .starter {
@@ -208,12 +208,16 @@ overlay {
 
   .logo-end img {
     filter: invert();
-    max-width: 30%;
+    max-width: 150px;
   }
 
   .end {
     display: flex;
     flex-direction: column;
+
+    p {
+      padding: 5px;
+    }
   }
 
   .end p {
@@ -366,5 +370,82 @@ overlay {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+
+/* ***** Media queries ********** */
+/* Tablets (between 768px and 1023px) */
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  
+
+}
+
+
+/* Desktop (more than 1024px) */
+@media (min-width: 1024px) {
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    max-width: 20%;
+  }
+   
+  .menu {
+    width: 80%;
+  }
+
+  .title-heart {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .starter, .dishes, .desserts {
+    max-width: 80%;
+    padding: 0 10%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+    flex-direction: row-reverse;
+  }
+
+  .logo-end {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .logo-end img {
+    width: 150px;
+  }
+
+  .end {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    margin-left: 25%;
+    gap: 15px;
+  }
+
+  .couverts, .partner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .end p, .contact {
+    margin: 0;
+    padding: 0;
+  }
+
 }
 
