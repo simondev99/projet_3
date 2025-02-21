@@ -1,0 +1,23 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass --watch scss/style.scss:css/style.css scss/menu.scss:css/menu.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssiimmoonndev/projet_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssiimmoonndev/projet_3/issues"
+  },
+  "homepage": "https://github.com/ssiimmoonndev/projet_3#readme",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}

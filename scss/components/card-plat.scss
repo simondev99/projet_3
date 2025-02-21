@@ -1,0 +1,14 @@
+@mixin card-base {
+  background-color: white;
+  border: transparent;
+  border-radius: 20px;
+  box-shadow: $box-shadow;
+  display: flex;
+}
+
+@mixin plats {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
