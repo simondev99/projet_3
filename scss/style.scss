@@ -58,6 +58,7 @@ footer {
   .button {
     @include gradient-button;
     width: 50%; // Spécifique au contexte
+    height: 30px;
   }
 
   .fonctionnement h2 {
@@ -187,7 +188,7 @@ footer {
   }
 
   .logo-end img {
-    // filter: invert();
+    filter: invert(1);
     max-width: 150px;
   }
 
@@ -225,6 +226,7 @@ footer {
   .button {
     @include gradient-button;
     width: 25%; // Spécifique au contexte
+    height: 40px;
   }
 
   .fonctionnement {
@@ -289,6 +291,7 @@ footer {
 
   .logo-end img {
     max-width: 150px;
+    filter: invert(1);
   }
 
 }

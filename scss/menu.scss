@@ -89,6 +89,8 @@ footer {
 
   .nolink {
     @include link-reset;
+    position: absolute;
+    left: 10%;
   }
 
   .card-restaurant {
@@ -168,8 +170,7 @@ footer {
   }
 
   .button {
-    @include gradient-button;
-    width: 50%; // Spécifique au contexte
+    @include content-flex-center;
   }
 
   .button1 {
@@ -181,7 +182,7 @@ footer {
   }
 
   .logo-end img {
-    // filter: invert();
+    filter: invert(1);
     max-width: 150px;
   }
 
@@ -194,7 +195,9 @@ footer {
   }
 
   .couverts, .partner {
-    @include flex-center;
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
   }
 
   .contact {
@@ -382,6 +385,7 @@ footer {
 
     img {
       width: 150px;
+      filter: invert(1)
     }
   }
 
